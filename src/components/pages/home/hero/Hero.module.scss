@@ -290,6 +290,8 @@
 }
 
 .image-mobile {
+  display: none;
+
   @include md-down {
     display: block;
   }

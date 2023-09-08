@@ -1,0 +1,110 @@
+.header {
+  padding-top: 16px;
+
+  @include md-down {
+    padding-top: 10px;
+  }
+}
+
+.header-container {
+  padding: 24px 48px;
+  border: 4px solid $color-primary;
+  border-radius: 64px;
+
+  @include md-down {
+    padding: 10px 14px;
+  }
+}
+
+.navigation {
+  display: flex;
+  column-gap: 200px;
+  justify-content: right;
+}
+
+.list {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+
+  @include md-down {
+    display: none;
+  }
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-secondary;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.wrapper-buttons {
+  display: flex;
+  column-gap: 14px;
+  align-items: center;
+
+  @include md-down {
+    column-gap: 8px;
+  }
+}
+
+.button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 24px;
+
+  @include md-down {
+    padding: 8px;
+  }
+}
+
+.button-lang {
+  background: none;
+  border: 2px solid #9dadf2;
+}
+
+.button-lang-text {
+  @include md-down {
+    display: none;
+  }
+}
+
+.button-login {
+  background: none;
+  border: 2px solid #9dadf2;
+
+  @include md-down {
+    display: none;
+  }
+}
+
+.button-sing {
+  background-color: $color-primary;
+  border: none;
+
+  @include md-down {
+    display: none;
+  }
+}
+
+.image-planet {
+  margin-right: 8px;
+  vertical-align: middle;
+
+  @include md-down {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+  }
+}

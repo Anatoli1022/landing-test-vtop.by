@@ -4,11 +4,16 @@ import React from 'react';
 
 import styles from './layout.module.scss';
 
+import Header from '../header/Header';
+import Footer from '../footer';
+
 const cx = classNames.bind(styles);
 
 const Layout = ({ children }) => (
   <div className={cx('wrapper')}>
+    <Header />
     <main className={cx('content')}>{children}</main>
+    <Footer />
   </div>
 );
 

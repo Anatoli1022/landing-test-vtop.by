@@ -1,0 +1,128 @@
+.footer {
+  @include md-down {
+    margin-top: 120px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 140px 24px;
+  border-top: 4px solid $color-primary;
+  border-right: 4px solid $color-primary;
+  border-left: 4px solid $color-primary;
+  border-radius: 64px 64px 0 0;
+
+  @include md-down {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 50px 50px 0 0;
+  }
+}
+
+.list-links {
+  display: flex;
+  column-gap: 40px;
+  align-items: end;
+
+  @include md-down {
+    flex-direction: column;
+    row-gap: 2px;
+    align-items: flex-start;
+    margin-top: 8px;
+  }
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-secondary;
+  transition: $transition-base;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  @include sm-down {
+    font-size: 14px;
+  }
+}
+
+.wrapper-social {
+  @include md-down {
+    margin-top: 20px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: end;
+
+  @include md-down {
+    font-size: 14px;
+    text-align: start;
+  }
+}
+
+.social-list {
+  display: flex;
+  column-gap: 8px;
+  margin-top: 14px;
+}
+
+.social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+
+  @include md-down {
+    width: 27px;
+    height: 27px;
+  }
+
+  &:hover > .social-link-background {
+    opacity: 0;
+  }
+}
+
+.social-link-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  transition: $transition-base;
+
+  @include md-down {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.image-icon {
+  vertical-align: middle;
+
+  @include md-down {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.social-link-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  @include md-down {
+    width: 27px;
+    height: 27px;
+  }
+}

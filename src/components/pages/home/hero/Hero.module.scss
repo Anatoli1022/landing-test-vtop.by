@@ -204,8 +204,8 @@
   @include md-down {
     flex-direction: column-reverse;
     row-gap: 8px;
+    max-width: 320px;
     margin-top: 32px;
-    overflow: visible;
 
     &::after {
       display: none;
